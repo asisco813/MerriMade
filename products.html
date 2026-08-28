@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treats — MerriMade</title>
+<meta name="description" content="The full MerriMade list: cake pops in every flavour, decorated cookies, truffles and fudge, mini cupcakes, plus party and dessert-table packages.">
+<meta name="theme-color" content="#fdf8f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171013" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍭</text></svg>">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================================================= header -->
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="17" r="11.5" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M24 28.5V42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M18.5 13h.01M27.5 11.5h.01M24 20.5h.01M29.5 17h.01M20 20h.01"
+              stroke="currentColor" stroke-width="2.8" stroke-linecap="round" opacity=".55"/>
+      </svg>
+      <span class="brand__text">
+        <span class="brand__name">MerriMade</span>
+        <span class="brand__sub">Cake Pops &amp; Treats</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="products.html">Treats</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+      <a class="btn btn--small nav__cta" href="about.html#order">Place an order</a>
+    </nav>
+  </div>
+</header>
+
+<!-- =============================================================== main -->
+<main id="main">
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The list</p>
+        <h1>What we make</h1>
+        <p>
+          Cake pops every week, in whatever colours are needed. Cookies, truffles and
+          fudge alongside them. Bouquets, favours and dessert tables are made to order.
+          Seasonal flavours come and go — if something is out of season, it'll be back.
+        </p>
+      </div>
+
+      <div class="filters">
+        <div class="chips" id="category-chips" role="group" aria-label="Filter by category"></div>
+        <label class="search">
+          <span class="sr-only">Search the treats</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>
+          </svg>
+          <input type="search" id="product-search" placeholder="Search — pops, truffles, bouquet…"
+                 autocomplete="off">
+        </label>
+        <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="grid" id="product-grid"></div>
+      <p class="empty" id="product-empty" hidden>
+        Nothing matches that. Try a different word, or
+        <a href="products.html">show everything</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="sunk tight">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Before you order</p>
+        <h2>The small print, briefly</h2>
+      </div>
+      <dl class="facts" style="max-width:760px">
+        <div><dt>Order cut-off</dt><dd>Tuesday, 8&nbsp;pm for that weekend</dd></div>
+        <div><dt>Minimum order</dt><dd>One dozen pops — mixed flavours within a dozen at no extra cost</dd></div>
+        <div><dt>Custom designs</dt><dd>Three weeks' notice, four for a dessert table. Deposit once the mock-up is approved.</dd></div>
+        <div><dt>Payment</dt><dd>Cash or card on collection</dd></div>
+        <div><dt>Keeping them</dt><dd>Pops are best within four days, somewhere cool and out of the sun — not the fridge, or the shells sweat. Cheesecake bites and dipped strawberries stay chilled and are same-day only.</dd></div>
+        <div><dt>Allergens</dt><dd>Wheat, egg, dairy, soy and nuts are all handled in the same kitchen</dd></div>
+      </dl>
+      <div class="hero__actions">
+        <a class="btn" href="about.html#order">Place an order</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================================================= footer -->
+<!-- ============================================================= footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <span class="brand__name">MerriMade</span>
+        <p style="margin-top:.6rem;color:var(--muted);font-size:.9rem;max-width:28ch">
+          Hand-rolled cake pops and small sweet things, made to order on
+          Rosewood Lane, Millbrook.
+        </p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Treats</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="about.html">About &amp; contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:" data-site-email>hello@merrimade.example</a></li>
+          <li><a href="tel:" data-site-phone>(555) 014-2287</a></li>
+          <li><a href="https://instagram.com" rel="noopener">@merrimade</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The week</h4>
+        <dl class="facts" data-hours style="background:transparent;border:0"></dl>
+      </div>
+    </div>
+    <div class="site-footer__note">
+      <span>&copy; <span data-site-year>2026</span> MerriMade. Made in a home kitchen, not a registered commercial premises.</span>
+      <span>Allergens on request — everything is made in a kitchen that handles wheat, egg, dairy, soy and nuts.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
